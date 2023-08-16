@@ -8,12 +8,19 @@ import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/Hooks';
+import { useActiveSectionContexts } from '@/context/Active-sectionContext';
 
 export const Intro = () => {
+  const { ref } = useSectionInView('Home', 0.5);
+
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContexts();
+
   return (
     <section
+      ref={ref}
       id='home'
-      className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]' //scroll-mt to take you to the top
+      className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]' //scroll-mt to take you to the top of the links clicked
     >
       <div className='flex items-center justify-center'>
         <div className='relative'>
@@ -71,6 +78,10 @@ export const Intro = () => {
       >
         <Link
           href='#contact'
+          onClick={() => {
+            setActiveSection('Contact');
+            setTimeOfLastClick(Date.now());
+          }}
           className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
         >
           Contact me here{' '}

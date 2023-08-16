@@ -1,13 +1,15 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { links } from '@/lib/data';
 import Link from 'next/link';
 import clsx from 'clsx';
+import { useActiveSectionContexts } from '@/context/Active-sectionContext';
 
 const Header = () => {
-  const [activeSection, setActiveSection] = useState('Home');
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContexts();
 
   return (
     <header className='z-[999] relative'>
@@ -32,7 +34,10 @@ const Header = () => {
                   { 'text-gray-950': activeSection === link.name } //setting classes conditionally use clsx
                 )}
                 href={link.hash}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now()); //to give a smooth transistion through the header
+                }}
               >
                 {link.name}
 
