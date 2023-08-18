@@ -40,8 +40,10 @@ export const sendEmail = async (formData: FormData) => {
       error: 'Invalid message or mail address',
     };
   }
+
+  let data;
   try {
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
       to: 'obiorapaschalugwu@gmail.com',
       subject: 'Message from contact form',
@@ -53,7 +55,12 @@ export const sendEmail = async (formData: FormData) => {
       }),
     });
   } catch (e: unknown) {
-    console.warn(e);
-    getErrorMessage(e);
+    return {
+      error: getErrorMessage(e),
+    };
   }
+
+  return {
+    data,
+  };
 };

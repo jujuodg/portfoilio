@@ -89,7 +89,7 @@ export const Intro = () => {
         </Link>
 
         <a
-          className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/100'
+          className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/100 dark:bg-white/10 dark:text-white/90'
           href='/public/CV.pdf'
           download
         >
@@ -100,7 +100,7 @@ export const Intro = () => {
         <a
           href='https://www.linkedin.com/in/obiora-ugwu-497526226/'
           target='_blank'
-          className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/100'
+          className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/100 dark:bg-white/10 dark:text-white/90'
         >
           <BsLinkedin />
         </a>
@@ -108,7 +108,7 @@ export const Intro = () => {
         <a
           href='https://github.com/jujistu'
           target='_blank'
-          className='bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/100'
+          className='bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/100 dark:bg-white/10 dark:text-white/90'
         >
           <FaGithubSquare />
         </a>

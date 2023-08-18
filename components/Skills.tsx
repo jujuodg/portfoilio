@@ -31,7 +31,7 @@ const Skills = () => {
             whileInView='animate'
             viewport={{ once: true }}
             custom={index} //to get a delay from transition when displaying the list
-            className='bg-white border border-black/[0.1] rounded-xl py-3 px-5'
+            className='bg-white border border-black/[0.1] rounded-xl py-3 px-5 dark:bg-white/10 dark:text-white/90'
             key={index}
           >
             {skill}

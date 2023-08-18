@@ -7,7 +7,13 @@ import Image from 'next/image';
 
 type ProjectProps = (typeof projectsData)[number];
 
-const Project = ({ title, description, imageUrl, tags }: ProjectProps) => {
+const Project = ({
+  title,
+  description,
+  imageUrl,
+  tags,
+  http,
+}: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -24,14 +30,20 @@ const Project = ({ title, description, imageUrl, tags }: ProjectProps) => {
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }} //to add animation while scrolling through the projects check docs
     >
-      <section className='group-even:pl-8 rounded-lg bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]   hover:bg-gray-200 transition'>
-        <div className='py-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]'>
-          <h3 className='text-2xl font-semibold'>{title}</h3>
-          <p className='mt-2 leading-relaxed text-gray-700'>{description}</p>
+      <section className='sm:group-even:pl-8 rounded-lg bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]   hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20'>
+        <div className='py-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>
+          <h3 className='text-2xl font-semibold hover:scale-110'>
+            <a href={http} target='_blank'>
+              {title}
+            </a>
+          </h3>
+          <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>
+            {description}
+          </p>
           <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
             {tags.map((tag, index) => (
               <li
-                className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full'
+                className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/80'
                 key={index}
               >
                 {tag}
@@ -44,7 +56,7 @@ const Project = ({ title, description, imageUrl, tags }: ProjectProps) => {
           src={imageUrl}
           alt='Project i worked on'
           quality={95}
-          className='absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 group-hover:translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition group-hover:scale-[1.04] group-even:-translate-x-3 group-even:-translate-y-3 group-even:rotate-2'
+          className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 group-hover:translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 transition group-hover:scale-[1.04] group-even:-translate-x-3 group-even:-translate-y-3 group-even:rotate-2'
         />
       </section>
     </motion.div>
