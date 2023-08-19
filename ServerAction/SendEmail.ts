@@ -3,12 +3,11 @@
 import { Resend } from 'resend';
 import { ContactFormEmail } from '@/email/Contact-form-email';
 import React from 'react';
+import { env } from '@/env';
 
-const api_key = 're_FwG3td2z_KbMkqBQhRcqgnZcBfYv4z5aP'; //`${process.env.RESEND_APIKEY}`;
-// console.log(api_key);
+const api_key = env.NEXT_PUBLIC_RESEND_APIKEY;
 
 const resend = new Resend(api_key);
-// re_FwG3td2z_KbMkqBQhRcqgnZcBfYv4z5aP
 
 const getErrorMessage = (e: unknown): string => {
   let message: string;

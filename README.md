@@ -9,3 +9,4 @@ i used react vertical timeline components for getting the vertical tree for my e
 i used resend api library to receive messages from the contact form in order to not receive it as spam
 i used react.email to style the email
 i used react-hot-toast to display error message stylishly
+i used zod to take care of my .env file
