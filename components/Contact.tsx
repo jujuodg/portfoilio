@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { SectionHeading } from './Section-heading';
 import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/Hooks';
@@ -11,6 +11,8 @@ import { toast } from 'react-hot-toast';
 
 export const Contact = () => {
   const { ref } = useSectionInView('Contact');
+  const [inputEmailValue, setInputEmailValue] = useState('');
+  const [inputMessageValue, setInputMessageValue] = useState('');
 
   return (
     <motion.section
@@ -44,7 +46,8 @@ export const Contact = () => {
             toast.error(error); //put the main jsx in layout
             return; //stop the function
           }
-
+          setInputEmailValue('');
+          setInputMessageValue('');
           toast.success('Email sent successfully!');
         }}
       >
@@ -52,6 +55,8 @@ export const Contact = () => {
           name='senderEmail'
           className='h-14 rounded-lg border border-black/10 p-4 outline-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
           type='email'
+          value={inputEmailValue}
+          onChange={(e) => setInputEmailValue(e.target.value)}
           required
           maxLength={500}
           placeholder='Your email'
@@ -59,6 +64,8 @@ export const Contact = () => {
         <textarea
           name='message'
           required
+          value={inputMessageValue}
+          onChange={(e) => setInputMessageValue(e.target.value)}
           maxLength={500}
           placeholder='Your message'
           className='h-52 my-3 rounded-lg border border-black/10 p-4 outline-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'

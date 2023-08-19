@@ -5,7 +5,7 @@ import { ContactFormEmail } from '@/email/Contact-form-email';
 import React from 'react';
 
 const api_key = 're_FwG3td2z_KbMkqBQhRcqgnZcBfYv4z5aP'; //`${process.env.RESEND_APIKEY}`;
-console.log(api_key);
+// console.log(api_key);
 
 const resend = new Resend(api_key);
 // re_FwG3td2z_KbMkqBQhRcqgnZcBfYv4z5aP
