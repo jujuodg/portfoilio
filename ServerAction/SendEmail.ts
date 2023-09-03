@@ -10,7 +10,7 @@ const api_key = env.NEXT_PUBLIC_RESEND_APIKEY;
 const resend = new Resend(api_key);
 
 const getErrorMessage = (e: unknown): string => {
-  let message: string;
+  let message;
 
   if (e instanceof Error) {
     message = e.message;

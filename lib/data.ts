@@ -4,9 +4,8 @@ import { MdOutlineEngineering } from 'react-icons/md';
 import { MdOutlineComputer } from 'react-icons/md';
 import { MdLocalGasStation } from 'react-icons/md';
 
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
-import wordanalyticsImg from '@/public/wordanalytics.png';
+import portfolio from '@/public/portfolio.png';
+import JuExpress from '@/public/JuExpress.png';
 
 export const links = [
   {
@@ -63,27 +62,27 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: 'My PORTFOLIO SITE',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: corpcommentImg,
-    http: 'github.com',
+      'I developed a site for my portfolio for easy access to me by recruiters which i used with the knowledge received',
+    tags: ['React', 'Next.js', 'Typescript', 'Framer motion', 'Tailwind'],
+    imageUrl: portfolio,
+    http: 'https://github.com/jujuodg/portfoilio',
   },
   {
-    title: 'rmtDev',
+    title: 'JUExpress',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    imageUrl: rmtdevImg,
-    http: 'github.com',
-  },
-  {
-    title: 'Word Analytics',
-    description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageUrl: wordanalyticsImg,
+      'This is a simple full-stack ecommerce website which was built with mongoDB and firebase which could serve as e-commerce site',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Tailwind',
+      'Firebase Storage',
+      'MongoDB',
+      'Framer motion',
+    ],
+    imageUrl: JuExpress,
     http: 'github.com',
   },
 ] as const;
