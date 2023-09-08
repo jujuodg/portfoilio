@@ -90,7 +90,7 @@ export const Intro = () => {
 
         <a
           className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/100 dark:bg-white/10 dark:text-white/90'
-          href='/public/CV.pdf'
+          href="/public/Obiora's Resume.pdf"
           download
         >
           Download CV{' '}

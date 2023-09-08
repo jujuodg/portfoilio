@@ -5,7 +5,7 @@ import { MdOutlineComputer } from 'react-icons/md';
 import { MdLocalGasStation } from 'react-icons/md';
 
 import portfolio from '@/public/portfolio.png';
-import JuExpress from '@/public/JuExpress.png';
+import JUrbanLux from '@/public/JUrbanLux.png';
 
 export const links = [
   {
@@ -70,9 +70,9 @@ export const projectsData = [
     http: 'https://github.com/jujuodg/portfoilio',
   },
   {
-    title: 'JUExpress',
+    title: 'JUrbanLux',
     description:
-      'This is a simple full-stack ecommerce website which was built with mongoDB and firebase which could serve as e-commerce site',
+      'This is a simple full-stack e-commerce website which was built with mongoDB and firebase which could serve as e-commerce site',
     tags: [
       'React',
       'TypeScript',
@@ -82,8 +82,8 @@ export const projectsData = [
       'MongoDB',
       'Framer motion',
     ],
-    imageUrl: JuExpress,
-    http: 'github.com',
+    imageUrl: JUrbanLux,
+    http: 'https://github.com/jujistu/JUrbanLux',
   },
 ] as const;
 
