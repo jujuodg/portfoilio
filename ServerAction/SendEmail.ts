@@ -5,7 +5,9 @@ import { ContactFormEmail } from '@/email/Contact-form-email';
 import React from 'react';
 import { env } from '@/env';
 
-const api_key = env.NEXT_PUBLIC_RESEND_APIKEY;
+// const api_key = env.NEXT_PUBLIC_RESEND_APIKEY;
+
+const api_key = process.env.NEXT_PUBLIC_RESEND_APIKEY!;
 
 const resend = new Resend(api_key);
 

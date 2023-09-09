@@ -83,7 +83,7 @@ export const projectsData = [
       'Framer motion',
     ],
     imageUrl: JUrbanLux,
-    http: 'https://github.com/jujistu/JUrbanLux',
+    http: 'https://jurbanlux.vercel.app',
   },
 ] as const;
 
