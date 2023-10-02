@@ -6,6 +6,8 @@ import { MdLocalGasStation } from 'react-icons/md';
 
 import portfolio from '@/public/portfolio.png';
 import JUrbanLux from '@/public/JUrbanLux.png';
+import movieDB from '@/public/Simulator Screenshot - iPhone 15 Pro Max - 2023-09-30 at 21.08.30.png';
+import Julio from '@/public/Simulator Screenshot - iPhone 15 Pro Max - 2023-09-30 at 16.45.45.png';
 
 export const links = [
   {
@@ -65,7 +67,7 @@ export const projectsData = [
     title: 'My PORTFOLIO SITE',
     description:
       'I developed a site for my portfolio for easy access to me by recruiters which i used with the knowledge received',
-    tags: ['React', 'Next.js', 'Typescript', 'Framer motion', 'Tailwind'],
+    tags: ['React', 'Next.js', 'Typescript', 'Framer motion', 'Tailwind CSS'],
     imageUrl: portfolio,
     http: 'https://github.com/jujuodg/portfoilio',
   },
@@ -77,13 +79,38 @@ export const projectsData = [
       'React',
       'TypeScript',
       'Next.js',
-      'Tailwind',
+      'Tailwind CSS',
       'Firebase Storage',
       'MongoDB',
       'Framer motion',
     ],
     imageUrl: JUrbanLux,
     http: 'https://jurbanlux.vercel.app',
+  },
+  {
+    title: 'JuMax',
+    description: `This is a mobile app built using React Native Expo and TypeScript that provides users with access to a wealth of movie information. It's designed to help users discover and explore movies, view details about them. It also includes data fetching from movieDB api`,
+    tags: ['React Native', 'TypeScript', 'Tailwind CSS'],
+    imageUrl: movieDB,
+    http: 'https://github.com/jujistu/JuMax',
+  },
+  {
+    title: 'Julio',
+    description:
+      'JUlio is a feature-rich e-commerce mobile application built using React Native. It leverages various technologies and libraries to provide a seamless shopping experience.',
+    tags: [
+      'React Native',
+      'TypeScript',
+      'MongoDB',
+      'Tailwind CSS',
+      'Node Js',
+      'Express',
+      'Flutterwave api',
+      'Redux toolkit',
+      'MongoDB',
+    ],
+    imageUrl: Julio,
+    http: 'https://github.com/jujistu/Julio',
   },
 ] as const;
 
@@ -100,4 +127,5 @@ export const skillsData = [
   'Scss',
   'Redux',
   'Framer Motion',
+  'MongoDB',
 ] as const;
