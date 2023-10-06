@@ -128,4 +128,9 @@ export const skillsData = [
   'Redux',
   'Framer Motion',
   'MongoDB',
+  'Node js',
+  'Express js',
+  'Team-work',
+  'Time Management',
+  'Adaptability',
 ] as const;

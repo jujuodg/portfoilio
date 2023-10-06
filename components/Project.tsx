@@ -30,7 +30,7 @@ const Project = ({
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }} //to add animation while scrolling through the projects check docs
     >
-      <section className='sm:group-even:pl-8 rounded-lg bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]   hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20'>
+      <section className='sm:group-even:pl-8 rounded-lg bg-gray-100 max-w-[42rem] md:h-[28rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]   hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20'>
         <div className='py-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>
           <h3 className='text-2xl font-semibold hover:scale-110'>
             <a href={http} target='_blank'>

@@ -44,7 +44,7 @@ export const Experience = () => {
             >
               <h3 className='font-semibold capitalize'>{experience.title}</h3>
               <p
-                className='font-normal !mt-0' //! is to overwrite any applied using tailwind
+                className='font-normal !mt-0' //'!' is to overwrite any applied using tailwind
               >
                 {experience.location}
               </p>
