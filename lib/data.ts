@@ -38,14 +38,6 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Engineering Intern',
-    location: 'Naval Dockyard Limited VI, Lagos',
-    description:
-      'I learnt basic Engineering Principles,Welding and Fabrication,Team work and Safety Protocols',
-    icon: React.createElement(MdOutlineEngineering),
-    date: '2021',
-  },
-  {
     title: 'Maintenance Intern',
     location: 'Pinnacle Oil and Gas ltd VI, Lagos',
     description:
@@ -59,6 +51,14 @@ export const experiencesData = [
     description: `i'm a freelance front-end developer who builds mobile and web application using react native and next.js continuously improving my stack`,
     icon: React.createElement(MdOutlineComputer),
     date: '2022 - present',
+  },
+  {
+    title: 'Software/IT Intern',
+    location: 'EdgeNet Consulting Ikeja, Lagos',
+    description:
+      'Learning about the IT industry and also improving my stack, building software solutions, and learning teamwork and collaboration',
+    icon: React.createElement(MdOutlineComputer),
+    date: '2023 - present',
   },
 ] as const;
 
