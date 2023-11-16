@@ -43,14 +43,14 @@ export const experiencesData = [
     description:
       'I learnt how to perform vehicle maintenance, Preventive maintenance,Documentation,Inventory Management and Time management',
     icon: React.createElement(MdLocalGasStation),
-    date: '2022',
+    date: '2021',
   },
   {
     title: 'Front-end Developer',
     location: 'Lagos',
     description: `i'm a freelance front-end developer who builds mobile and web application using react native and next.js continuously improving my stack`,
     icon: React.createElement(MdOutlineComputer),
-    date: '2022 - present',
+    date: '2021 - present',
   },
   {
     title: 'Software/IT Intern',
