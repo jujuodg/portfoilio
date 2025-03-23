@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Ugwu Obiora | Personal Portfolio',
-  description: 'Obiora is a web and mobile developer with two years experience',
+  description: 'Obiora is a Software Engineer and with four years experience',
 };
 
 export default function RootLayout({
