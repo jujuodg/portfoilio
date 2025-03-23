@@ -58,13 +58,13 @@ export const Intro = () => {
         </div>
       </div>
       <motion.h1
-        className='mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-4xl'
+        className='mb-10 mt-4 px-4 text-2xl text-center font-medium !leading-[1.5] sm:text-3xl'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span className='font-bold'>Hello, I'm Ugwu Obiora Paschal.</span> I'm a{' '}
-        <span className='font-bold'>Software Engineer</span> with{' '}
-        <span className='font-bold'>4 years</span> of experience in building
+        <span className='font-medium'>Software Engineer</span> with{' '}
+        <span className='font-medium'>4 years</span> of experience in building
         scalable web applications. Skilled in{' '}
         <span className=''>
           Frontend Development, DevOps practices, and API integration
