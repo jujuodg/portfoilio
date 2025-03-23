@@ -19,30 +19,25 @@ export const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
-        After graduating with a degree in{' '}
-        <span className='font-medium'>Mechanical Engineering</span>, I decided
-        to pursue my passion for programming. I took up some certified coding
-        courses and learned{' '}
-        <span className='font-medium'>
-          front-end development (mobile & web){' '}
-        </span>
-        . <span className='italic'>My favorite part of programming</span> is the
-        problem-solving aspect. I <span className='underline'>love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is <span className='font-medium'>React, Next.js and React-native</span>.
-        I am also familiar with TypeScript, Scss, Tailwind css, Redux and
-        Firebase. I am always looking to learn new technologies. I am currently
-        looking for a <span className='font-medium'>full-time position</span> as
-        a software developer.
+        Results-driven <span className='font-medium'>Software Engineer</span>{' '}
+        with 4 years of experience in developing scalable web applications using{' '}
+        <span className='font-medium'>TypeScript</span>,{' '}
+        <span className='font-medium'>JavaScript</span>, and{' '}
+        <span className='font-medium'>React</span>. Proficient in building
+        robust front-end interfaces and collaborating with cross-functional
+        teams to deliver high-performance solutions. Experienced in{' '}
+        <span className='font-medium'>DevOps practices</span>, ensuring seamless
+        CI/CD pipelines and infrastructure management. Skilled in{' '}
+        <span className='font-medium'>Next.js</span>, API integration, and
+        effective state management. Passionate about developing clean, efficient
+        code and solving complex problems.
       </p>
       <p>
-        <span className='italic'>When I'm not coding</span>, I enjoy playing
-        video games, watching movies, reading non-fiction books and relaxing
-        with family. I also enjoy{' '}
-        <span className='font-medium'>learning new things</span>. I am currently
-        learning about the{' '}
-        <span className='font-medium'>State of World affairs</span>. I'm also
-        learning divergent concepts that could aid my self development.
+        I enjoy playing video games,playing football and relaxing with family. I
+        also enjoy <span className='font-normal'>learning new things</span>. I
+        am currently learning about the{' '}
+        <span className='font-normal'>State of World affairs</span> and
+        exploring divergent concepts that could aid my self-development.
       </p>
     </motion.section>
   );

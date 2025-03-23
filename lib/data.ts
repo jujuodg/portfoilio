@@ -38,25 +38,25 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Maintenance Intern',
-    location: 'Pinnacle Oil and Gas ltd VI, Lagos',
+    title: 'Junior Software Engineer',
+    location: 'EdgeNet Consulting Limited, Lagos',
     description:
-      'I learnt how to perform vehicle maintenance, Preventive maintenance,Documentation,Inventory Management and Time management',
-    icon: React.createElement(MdLocalGasStation),
-    date: '2021',
-  },
-  {
-    title: 'Front-end Developer',
-    location: 'Lagos',
-    description: `i'm a freelance front-end developer who builds mobile and web application using react native and next.js continuously improving my stack`,
+      'Developed web applications using JavaScript and React, conducted unit testing, and collaborated on troubleshooting. Contributed to code reviews, created reusable components.',
     icon: React.createElement(MdOutlineComputer),
-    date: '2021 - present',
+    date: '2021 - 2023',
   },
   {
-    title: 'Software/IT Intern',
-    location: 'EdgeNet Consulting Ikeja, Lagos',
+    title: 'Software Engineer (Contract)',
+    location: 'Zekyume LTD, London',
+    description: `Developed AI SaaS applications, integrating machine learning models and AI services for improved functionality.`,
+    icon: React.createElement(MdOutlineComputer),
+    date: '2024 - 2025',
+  },
+  {
+    title: 'Software Engineer',
+    location: 'EdgeNet Consulting Limited, Lagos',
     description:
-      'Learning about the IT industry and also improving my stack, building software solutions, and learning teamwork and collaboration',
+      'Developed dynamic web applications using React, Next.js, TypeScript, and JavaScript. Collaborated with designers, integrated APIs, and implemented efficient code structures, improving application performance by 20%.',
     icon: React.createElement(MdOutlineComputer),
     date: '2023 - present',
   },

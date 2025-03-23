@@ -58,15 +58,18 @@ export const Intro = () => {
         </div>
       </div>
       <motion.h1
-        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        className='mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-4xl'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span className='font-bold'>Hello, I'm Ugwu Obiora Paschal.</span> I'm a{' '}
-        <span className='font-bold'>web and mobile developer</span> with{' '}
-        <span className='font-bold'>3 years</span> of experience. I enjoy
-        building <span className='italic'>sites & mobile apps</span>. My focus
-        is <span className='underline'>React (Next.js), React Native</span>.
+        <span className='font-bold'>Software Engineer</span> with{' '}
+        <span className='font-bold'>4 years</span> of experience in building
+        scalable web applications. Skilled in{' '}
+        <span className=''>
+          Frontend Development, DevOps practices, and API integration
+        </span>
+        , with a focus on developing clean, efficient code.
       </motion.h1>
       <motion.div
         className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
@@ -90,7 +93,7 @@ export const Intro = () => {
 
         <a
           className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/100 dark:bg-white/10 dark:text-white/90'
-          href='/UgwuObioraPaschalResume.pdf'
+          href='/UgwuObioraPaschalCV.pdf'
           download
         >
           Download CV{' '}
